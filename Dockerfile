@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package.json package-lock.json* pnpm-lock.yaml* yarn.lock* ./
 
 # Copy .env
-COPY .env ./
+# COPY .env ./
 
 # If you use pnpm
 # RUN npm install -g pnpm && pnpm install
