@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { MdArrowBack } from "react-icons/md";
 
 export default function Login() {
     const [email, setEmail] = useState("");
@@ -16,7 +17,11 @@ export default function Login() {
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
             <div className="max-w-md w-full bg-white p-8 rounded shadow">
-                <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
+                <div className="w-full">
+                    <div className="w-full">
+                        <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
+                    </div>
+                </div>
                 <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
                         <label htmlFor="email" className="block text-sm font-medium text-gray-700">
