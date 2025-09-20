@@ -1,11 +1,15 @@
 import React from 'react'
 
-const Layout = ({children}) => {
+export const metadata = {
+  title: "Admin Page",
+  description: "Admin page",
+};
+const LayoutAdmin = ({children}) => {
     return (
         <div>
-            Halo Admin
+            {children}
         </div>
     )
 }
 
-export default Layout
+export default LayoutAdmin

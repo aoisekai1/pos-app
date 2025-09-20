@@ -1,11 +1,15 @@
 import React from 'react'
 
-const Layout = ({children}) => {
+export const metadata = {
+  title: "Customer Page",
+  description: "Customer page",
+};
+const LayoutCustomer = ({children}) => {
     return (
         <div>
-            Halo Customer
+            {children}
         </div>
     )
 }
 
-export default Layout
+export default LayoutCustomer
