@@ -1,9 +1,18 @@
+"use client"
 import Head from "next/head";
+import { useRouter } from "next/navigation";
 import { GrTransaction } from "react-icons/gr";
 import { MdInventory } from "react-icons/md";
 import { TbReport } from "react-icons/tb";
 
 export default function Home() {
+	const router = useRouter()
+	const handleLogin = () => {
+		router.push('/login')
+	}
+	const handlerSignup = () => {
+		router.push('/signup')
+	}
 	return (
 		<>
 			<Head>
@@ -16,10 +25,13 @@ export default function Home() {
 				<nav className="container mx-auto flex justify-between items-center py-6 px-4">
 					<h1 className="text-2xl font-bold">POSPro</h1>
 					<ul className="flex space-x-6">
-						<li><a href="#features" className="hover:underline">Fitur</a></li>
-						<li><a href="#pricing" className="hover:underline">Harga</a></li>
-						<li><a href="#contact" className="hover:underline">Kontak</a></li>
-						<li><button className="bg-white text-blue-700 font-semibold px-4 py-2 rounded hover:bg-gray-100">Coba Gratis</button></li>
+						<li className="flex items-center"><a href="#features" className="hover:underline">Fitur</a></li>
+						<li className="flex items-center"><a href="#pricing" className="hover:underline">Harga</a></li>
+						<li className="flex items-center"><a href="#contact" className="hover:underline">Kontak</a></li>
+						<li className="space-x-4">
+							<button onClick={handleLogin} className="bg-blue-400 text-white font-semibold px-4 py-2 rounded hover:bg-gray-100 hover:text-black cursor-pointer">Login</button>
+							<button onClick={handlerSignup} className="bg-white text-blue-700 font-semibold px-4 py-2 rounded hover:bg-gray-100 cursor-pointer">Coba Gratis</button>
+						</li>
 					</ul>
 				</nav>
 			</header>
@@ -31,7 +43,7 @@ export default function Home() {
 						<div className="md:w-1/2 mb-10 md:mb-0">
 							<h2 className="text-4xl font-extrabold mb-4">Solusi Point of Sale Modern untuk Bisnis Anda</h2>
 							<p className="mb-6 text-lg">POSPro memudahkan pengelolaan penjualan, inventaris, dan laporan bisnis secara real-time dengan antarmuka yang mudah digunakan.</p>
-							<button className="bg-white text-blue-700 font-bold px-6 py-3 rounded shadow hover:bg-gray-100 transition">Mulai Coba Gratis</button>
+							<button onClick={handlerSignup} className="bg-white text-blue-700 font-bold px-6 py-3 cursor-pointer rounded shadow hover:bg-gray-100 transition">Mulai Coba Gratis</button>
 						</div>
 						<div className="md:w-1/2">
 							<img src="/assets/images/pos_cover.png" alt="POS Application" className="rounded-lg shadow-lg" />
