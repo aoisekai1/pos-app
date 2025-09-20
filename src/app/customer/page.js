@@ -19,25 +19,25 @@ const PageCustomer = () => {
                     <h2 className="text-2xl font-semibold mb-4">Produk Favorit</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         <div className="bg-white rounded shadow p-4 flex flex-col items-center">
-                            <img src="https://via.placeholder.com/100" alt="Produk 1" className="mb-2" />
+                            <img src="/assets/images/drink.jpeg" alt="Produk 1" className="mb-2" />
                             <h3 className="font-semibold">Produk A</h3>
                             <p className="text-green-600 font-bold">Rp 50.000</p>
                             <button className="mt-2 bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Beli</button>
                         </div>
                         <div className="bg-white rounded shadow p-4 flex flex-col items-center">
-                            <img src="https://via.placeholder.com/100" alt="Produk 2" className="mb-2" />
+                            <img src="/assets/images/drink1.jpeg" alt="Produk 2" className="mb-2" />
                             <h3 className="font-semibold">Produk B</h3>
                             <p className="text-green-600 font-bold">Rp 75.000</p>
                             <button className="mt-2 bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Beli</button>
                         </div>
                         <div className="bg-white rounded shadow p-4 flex flex-col items-center">
-                            <img src="https://via.placeholder.com/100" alt="Produk 3" className="mb-2" />
+                            <img src="/assets/images/food.jpeg" alt="Produk 3" className="mb-2" />
                             <h3 className="font-semibold">Produk C</h3>
                             <p className="text-green-600 font-bold">Rp 100.000</p>
                             <button className="mt-2 bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Beli</button>
                         </div>
                         <div className="bg-white rounded shadow p-4 flex flex-col items-center">
-                            <img src="https://via.placeholder.com/100" alt="Produk 4" className="mb-2" />
+                            <img src="/assets/images/food1.jpeg" alt="Produk 4" className="mb-2" />
                             <h3 className="font-semibold">Produk D</h3>
                             <p className="text-green-600 font-bold">Rp 120.000</p>
                             <button className="mt-2 bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Beli</button>
